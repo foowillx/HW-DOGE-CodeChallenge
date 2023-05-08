@@ -1,5 +1,9 @@
 <img src="./media/Honeywell_Spot_Red+BlackTagline_Right_PNG.png" alt="Honeywell Logo" />
 
+#GRC Added
+Please clone the repository and execute the DOGE.sql script file into a MS SQL Server to replicate the demo Database and execute the solution in order to make it run.
+
+
 ## Hello #FutureShaper
 I am glad that you passed the first stages of the interview process 🎉🥳. Now is the time to show us what you got! 
 
