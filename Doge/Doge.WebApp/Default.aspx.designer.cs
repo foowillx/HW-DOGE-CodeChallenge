@@ -15,12 +15,12 @@ namespace Doge.WebApp
     {
 
         /// <summary>
-        /// ordersGridView control.
+        /// ordersDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView ordersGridView;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ordersDiv;
     }
 }

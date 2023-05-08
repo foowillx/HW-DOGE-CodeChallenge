@@ -2,7 +2,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <asp:GridView ID="ordersGridView" runat="server">
-        </asp:GridView>
+        <div id="ordersDiv" runat="server"></div>
     </div>
 </asp:Content>

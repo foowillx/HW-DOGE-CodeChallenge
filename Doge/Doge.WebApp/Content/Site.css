@@ -121,5 +121,33 @@
 
 .deleted-text {
     text-decoration: line-through;
-    ;
+}
+
+
+/*GRC Styles*/
+
+.order-wrapper {
+    display: inline-block;
+}
+
+.order-container {
+    display: block;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.order-container h3 {
+    color: darkblue !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.order-status{
+    padding-left: 20px;
+}
+
+.order-address {
+    padding-left: 10px;
 }
