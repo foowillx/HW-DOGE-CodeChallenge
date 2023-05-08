@@ -10,7 +10,7 @@
 Imports System
 Imports System.Collections.Generic
 
-Partial Public Class Orders
+Partial Public Class Order
     Public Property OrderId As Integer
     Public Property RequiredShippedTimestamp As Nullable(Of Date)
     Public Property ShipmentAddress As String

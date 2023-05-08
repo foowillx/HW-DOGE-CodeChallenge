@@ -5,7 +5,7 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="DOGEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Orders">
+        <EntityType Name="Order">
           <Key>
             <PropertyRef Name="OrderId" />
           </Key>
@@ -14,14 +14,14 @@
           <Property Name="ShipmentAddress" Type="varchar(max)" />
         </EntityType>
         <EntityContainer Name="DOGEModelStoreContainer">
-          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DOGEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Orders">
+        <EntityType Name="Order">
           <Key>
             <PropertyRef Name="OrderId" />
           </Key>
@@ -30,7 +30,7 @@
           <Property Name="ShipmentAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="DOGEEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Orders" EntityType="Self.Orders" />
+          <EntitySet Name="Order" EntityType="Self.Order" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -38,9 +38,9 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="DOGEModelStoreContainer" CdmEntityContainer="DOGEEntities">
-          <EntitySetMapping Name="Orders">
-            <EntityTypeMapping TypeName="DOGEModel.Orders">
-              <MappingFragment StoreEntitySet="Orders">
+          <EntitySetMapping Name="Order">
+            <EntityTypeMapping TypeName="DOGEModel.Order">
+              <MappingFragment StoreEntitySet="Order">
                 <ScalarProperty Name="OrderId" ColumnName="OrderId" />
                 <ScalarProperty Name="RequiredShippedTimestamp" ColumnName="RequiredShippedTimestamp" />
                 <ScalarProperty Name="ShipmentAddress" ColumnName="ShipmentAddress" />

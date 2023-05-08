@@ -22,6 +22,6 @@ Partial Public Class DOGEEntities
         Throw New UnintentionalCodeFirstException()
     End Sub
 
-    Public Overridable Property Orders() As DbSet(Of Orders)
+    Public Overridable Property Order() As DbSet(Of Order)
 
 End Class

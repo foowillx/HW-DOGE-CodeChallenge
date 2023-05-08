@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Doge.Model;
+using Doge.Orders;
 
 namespace Doge.WebApp
 {
@@ -11,7 +13,10 @@ namespace Doge.WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Service1 client = new Service1();
+            List<Orders.Order> orders = client.GetOrders();
+            ordersGridView.DataSource = client.GetOrders();
+            ordersGridView.DataBind();
         }
     }
 }
